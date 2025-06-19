@@ -81,6 +81,10 @@ header nav li a {
     padding: 12px 0; 
 }
 
+article {
+        margin-bottom: 24px;
+    }
+
 .footer {
     background-color: #2a2d30;
     font-size: 0.9em;    
@@ -91,7 +95,7 @@ header nav li a {
 
 @media screen and (max-width: 767px) {
     .container {
-    max-width: 95%;
+        max-width: 95%;
     }
 
     .container nav {
@@ -107,26 +111,18 @@ header nav li a {
     }
     
     .pinguim-carousel img {
-        height: 100%;          /* a imagem vai ocupar toda a altura do .carousel-item */
+        height: 100%;          
         width: 100%;
-        object-fit: cover;     /* faz o "zoom", mantendo proporção */
+        object-fit: cover;     
         object-position: center;
-    }
-
-    article {
-        margin-bottom: 32px;
     }
 }
 
 @media screen and (min-width:768px) and (max-width: 1023px) {
-    article {
-        margin-bottom: 32px;
-    }
-
         .pinguim-carousel img {
         height: 100%;          
         width: 100%;
-        object-fit: cover;     
+        object-fit: cover;  
         object-position: center;
     }
 
