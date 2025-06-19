@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Montserrat, sans-serif;
+    color: #f9f7f7;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #f3f3f4;
+}
+
+header .container,
+section .container {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+} 
+
+header {
+    position: sticky;
+    top: 0; 
+    left: 0;
+    z-index: 2; 
+    padding-top: 5px;
+    background-color: #2a2d30;
+    color: #f3f3f4;
+}
+
+header h1 {
+    font-size: 1.7em;
+    color: #f3f3f4;
+    margin-inline-end: auto;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 14px;
+    font-size: 1.2em;
+}
+
+header nav li a {
+    color: #f3f3f4;
+    text-decoration: none; 
+}
+
+.pinguim-carousel {
+    padding-bottom: 48px;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.container h2 {
+    color:#2a2d30;
+    border-bottom: 1px solid #2a2d30;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+}
+
+.card-img-overlay {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.card img {
+    max-height: 400px;
+    }
+
+.card-title {
+    padding-top: 12px;
+}
+
+.card-subtitle {
+    padding: 12px 0; 
+}
+
+.footer {
+    background-color: #2a2d30;
+    font-size: 0.9em;    
+    text-align: center;
+    padding: 12px;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+    max-width: 95%;
+    }
+
+    .container nav {
+        text-align: right;
+    }
+
+    .pinguim-carousel {
+        padding-bottom: 0 px; 
+    }
+
+    .carousel-item {
+        height: 300px;  
+    }
+    
+    .pinguim-carousel img {
+        height: 100%;          /* a imagem vai ocupar toda a altura do .carousel-item */
+        width: 100%;
+        object-fit: cover;     /* faz o "zoom", mantendo proporção */
+        object-position: center;
+    }
+
+    article {
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+    article {
+        margin-bottom: 32px;
+    }
+
+        .pinguim-carousel img {
+        height: 100%;          
+        width: 100%;
+        object-fit: cover;     
+        object-position: center;
+    }
+
+}
